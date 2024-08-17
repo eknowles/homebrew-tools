@@ -5,10 +5,19 @@
 class Tilepack < Formula
   desc "Scrape xyz tiles to an mbtiles file"
   homepage "https://github.com/eknowles/tilepack"
-  url "https://github.com/eknowles/tilepack/archive/refs/tags/v1.2.3.tar.gz"
-  sha256 "84c500f2f437a3be3bd0096891e31081491a56d53ab2897cdd9c9876637a4878"
+  url "https://github.com/eknowles/tilepack/archive/refs/tags/v1.2.4.tar.gz"
+  sha256 "b8e609ab223927318eceb84f5cec3f9f4b3536f6a3ff64fd97f2ce04c13a555b"
 
   on_macos do
+    on_intel do
+      url "https://github.com/eknowles/tilepack/releases/download/v1.2.4/tilepack-1.2.4-darwin-amd64.tar.gz"
+      sha256 "2be8c4b7ed156dd34f369d044dffbad269d1c39ebad1b51afe9c06fc4d45e902"
+    end
+
+    on_arm do
+      url "https://github.com/eknowles/tilepack/releases/download/v1.2.4/tilepack-1.2.4-darwin-arm64.tar.gz"
+      sha256 "138df7a17062f58776a5fb7cc504ed031085fb110e6a8aaf30cb2b2acc086a37"
+    end
   end
 
   on_linux do
