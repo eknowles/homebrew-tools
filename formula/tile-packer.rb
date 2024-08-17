@@ -5,8 +5,8 @@
 class TilePacker < Formula
   desc "Convert a xyz tile url to a mbtiles file"
   homepage "https://github.com/eknowles/tile-packer"
-  url "https://github.com/eknowles/tile-packer/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "7456bf52eb4d86733893f5dc3a9b855a712e2628aed85711c95a7fb3f96936ab"
+  url "https://github.com/eknowles/tile-packer/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "20bc20c8c96e9fbe2c70d62bc466c7efe14088ea9b6edcd78c05dda1554d0ba9"
 
   on_macos do
   end
@@ -16,11 +16,11 @@ class TilePacker < Formula
 
   def install
     if Hardware::CPU.arm? && OS.mac?
-  bin.install "tile-packer-#{version}-darwin-arm64/tile-packer" => "tile-packer"
+  bin.install "tile-packer" => "tile-packer"
 elsif Hardware::CPU.intel? && OS.mac?
-  bin.install "tile-packer-#{version}-darwin-amd64/tile-packer" => "tile-packer"
+  bin.install "tile-packer" => "tile-packer"
 elsif OS.linux?
-  bin.install "tile-packer-#{version}-linux-amd64/tile-packer" => "tile-packer"
+  bin.install "tile-packer" => "tile-packer"
 end
   end
 
