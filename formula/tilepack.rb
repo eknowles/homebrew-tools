@@ -5,18 +5,18 @@
 class Tilepack < Formula
   desc "Scrape xyz tiles to an mbtiles file"
   homepage "https://github.com/eknowles/tilepack"
-  url "https://github.com/eknowles/tilepack/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "70534c5bf24b976972b0cc1165689ab3e8ffbdd74e8da39d96e236266eca4cf1"
+  url "https://github.com/eknowles/tilepack/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "7200f715a3b0a080695bed67e515de5ab1088b50085f320ca1dd783e408bdb13"
 
   on_macos do
     on_intel do
-      url "https://github.com/eknowles/tilepack/releases/download/v1.3.0/tilepack-1.3.0-darwin-amd64.tar.gz"
-      sha256 "609864f61038a83c63cbe3511a7de37bc1f0695f7334d37d0380694794533178"
+      url "https://github.com/eknowles/tilepack/releases/download/v1.4.0/tilepack-1.4.0-darwin-amd64.tar.gz"
+      sha256 "b56301e33cd3309375e1ca7039d7ffc5a68c67cee28bf9a6854308cfaaa5dd1b"
     end
 
     on_arm do
-      url "https://github.com/eknowles/tilepack/releases/download/v1.3.0/tilepack-1.3.0-darwin-arm64.tar.gz"
-      sha256 "5ac8181deed8eb0806f8c0a3c1fc53d595c35a93b67f91954fbca97eacb58e5a"
+      url "https://github.com/eknowles/tilepack/releases/download/v1.4.0/tilepack-1.4.0-darwin-arm64.tar.gz"
+      sha256 "48944ed195a598ed2e662007a7e3bbf835ed6bbd5db759c470690e3c3134390f"
     end
   end
 
